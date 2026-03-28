@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 17px;
+    
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700px;
+    margin: 0px;
+}
+
+p {
+    font-weight: 400px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.container {
+    max-width: 359px;
+    display: block;
+    margin: 0px auto;
+    padding: 0px 17px;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 1px solid black;
+    border-radius: 30px;
+    gap: 7px;
+}
+
+header img {
+    display: block;
+    margin-right: auto;
+    padding-left: 4px;
+    width: 35px;
+    height: 35px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+#resume {
+    margin-right: 11px;
+}
+
+#fio {
+    display: flex;
+    align-items: center;
+    margin: 14px 0px;
+    gap: 10px;
+}
+
+#fio img {
+    border-radius: 20px;
+    width: 123px;
+    height: 123px;
+}
+
+#aboutMe {
+    margin-bottom: 85px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+#pechatR {
+    display: flex;
+    justify-content: end;
+}
+
+#pechat {
+    width: 210px;
+    height: 210px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
