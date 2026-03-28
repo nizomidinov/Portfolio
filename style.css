@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 15px 17px;
+    background-color: #F8F8F8;
 }
 
 h2 {
@@ -75,6 +76,15 @@ header {
     height: 123px;
 }
 
+#name {
+    display: flex;
+    flex-direction: column;
+}
+
+#vA {
+    font-size: 14px;
+}
+
 #aboutMe {
     margin-bottom: 85px;
 }
@@ -85,18 +95,23 @@ header {
     margin-bottom: 85px;
 }
 
-#pechatR {
+#lastTxt {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
 }
 
 #pechat {
     width: 210px;
     height: 210px;
+    align-self: flex-end;
+    margin-top: -17px;
+    margin-right: -45px;
+    opacity: 90%;
 }
 
 footer {
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    font-size: 14px;
 }
