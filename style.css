@@ -29,31 +29,36 @@ header {
     border-radius: 25px;
     height: 25px;
     align-items: center;
+    justify-content: space-between;
 }
 
-header img {
+#logo {
+    display: flex;
+    align-items: center;
     margin: 5px 4px;
+}
+
+#logo img {
     width: 35px;
     height: 35px;
-    margin-right: 212px;
 }
 
-header a {
+#linkS {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 5px 0px;
+}
+
+#linkS a {
     display: block;
     margin-left: auto;
     text-decoration: none;
     color: black;
     font-size: 12px;
-    gap: 7px;
-}
-
-#portfolio {
-    margin: 0px;
-    margin-right: 7px;
 }
 
 #resume {
-    margin: 0px;
     margin-right: 11px;
 }
 
