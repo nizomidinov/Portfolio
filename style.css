@@ -31,9 +31,6 @@ header {
     height: 25px;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 
 }
 
@@ -61,6 +58,12 @@ header {
     text-decoration: none;
     color: black;
     font-size: 12px;
+    transition: 0.3s;
+}
+
+#portfolio:hover,
+#resume:hover {
+    color: #747474;
 }
 
 #resume {
