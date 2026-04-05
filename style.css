@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 15px 17px;
     background-color: #F8F8F8;
 }
 
@@ -17,38 +22,42 @@ p {
 }
 
 .container {
-    max-width: 359px;
-    display: block;
     margin: 0px auto;
     padding: 0px 17px;
+    max-width: 393px;
 }
 
 header {
-    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    max-width: 1200px;
+    margin: 14px auto 0 auto;
+    width: 100%;
+    background-color: #F8F8F8;
     display: flex;
-    border: 1px solid black;
-    border-radius: 25px;
-    height: 25px;
+    border-top: 0.2px solid black;
+    border-bottom: 0.2px solid black;
+    height: 33px;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #logo {
     display: flex;
     align-items: center;
-    margin: 5px 4px;
+    margin: 1px 8px;
 }
 
 #logo img {
-    width: 35px;
-    height: 35px;
+    width: 31px;
+    height: 31px;
 }
 
 #linkS {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
     margin: 5px 0px;
 }
 
@@ -67,20 +76,30 @@ header {
 }
 
 #resume {
-    margin-right: 11px;
+    margin-right: 17px;
 }
 
 #fio {
     display: flex;
     align-items: center;
-    margin: 14px 0px;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 #fio img {
-    border-radius: 25px;
-    width: 123px;
-    height: 123px;
+    max-width: 96px;
+    width: 100%;
+    height: auto;
+    margin-top: 11px;
+    margin-bottom: 20px;
+}
+
+#babIv img {
+    max-width: 174px;
+    width: 100%;
+    height: auto;
+    border: 0.2px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
 #name {
@@ -93,13 +112,24 @@ header {
 }
 
 #aboutMe {
-    margin-bottom: 85px;
+    margin-bottom: 16px;
 }
 
 #skills {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+#rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+#skills h2 {
+    margin: 0;
 }
 
 #lastTxt {
@@ -107,18 +137,25 @@ header {
     flex-direction: column;
 }
 
-#pechat {
-    width: 210px;
-    height: 210px;
-    align-self: flex-end;
-    margin-top: -17px;
-    margin-right: -45px;
-    opacity: 90%;
+#lastTxt li {
+    font-size: 20px;
+    font-weight: 400px;
+    margin-bottom: 7px;
+}
+
+#lastTxt ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li::marker {
+    font-size: 0.5em;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 14px;
 }
